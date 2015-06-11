@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>Chapter 8: Frame 1</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="/home/ilovethechiefs/Desktop/js/frameworks/jquery-1.11.3.js"></script>
+</head>
+
+<body>
+  <div id='header'>
+    <h3>Build your own Macbook Pro!</h3>
+    <h4>Which base model should we start with:</h4>
+  </div>
+
+  <form action="" name="formBuildYourOwnBox">
+    <div id='baseModel'>
+        <table>
+          <tr>
+            <td>
+              <input type="radio" name="radScreenSize"
+                value="13-inch: 2.7Ghz with Retina Display (128GB of flash storage)" onclick="window.top.buildBaseModel(0)" />
+            </td>
+            <td>
+              13-inch: 2.7Ghz with Retina Display (128GB of flash storage)
+            </td>
+            <td>
+              <input type="radio" name="radScreenSize"
+                value="15-inch: 2.2Ghz with Retina Display" onclick="window.top.buildBaseModel(3)" />
+            </td>
+            <td>
+              15-inch: 2.2Ghz with Retina Display
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="radScreenSize"
+                value="13-inch: 2.7Ghz with Retina Display (256GB of flash storage)" onclick="window.top.buildBaseModel(1)" />
+            </td>
+            <td>
+              13-inch: 2.7Ghz with Retina Display (256GB of flash storage)
+            </td>
+            <td>
+              <input type="radio" name="radScreenSize"
+                value="15-inch: 2.5Ghz with Retina Display" onclick="window.top.buildBaseModel(4)" />
+            </td>
+            <td>
+              15-inch: 2.5Ghz with Retina Display
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="radScreenSize"
+                value="13-inch: 2.9Ghz with Retina Display" onclick="window.top.buildBaseModel(2)" />
+            </td>
+            <td>
+              13-inch: 2.9Ghz with Retina Display
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div id='processor'>
+        <p>
+        <h4>Upgrade Processor:</h4>
+        <table>
+          <tr id = "p27i5">
+            <td>
+              <input type="radio" name="radProcessor"
+                 value="p27i5" id='p27i5ID'
+                 onclick="window.top.updateProcessor(0)" checked/>
+            </td>
+            <td>
+              2.7GHz Dual-core Intel Core i5<br>Turbo Boost up to 3.1GHz
+            </td>
+          </tr>
+          <tr id = "p29i5">
+            <td>
+              <input type="radio" name="radProcessor"
+                 value="p29i5" id='p29i5ID'
+                 onclick="window.top.updateProcessor(1)" />
+            </td>
+            <td>
+              2.9GHz Dual-core Intel Core i5<br>Turbo Boost up to 3.3GHz
+            </td>
+          </tr>
+          <tr id = "p31i7">
+            <td>
+              <input type="radio" name="radProcessor"
+                 value="p31i7" id='p31i7ID'
+                 onclick="window.top.updateProcessor(2)" />
+            </td>
+            <td>
+              3.1GHz Dual-core Intel Core i7<br>Turbo Boost up to 3.4GHz
+            </td>
+          </tr>
+          <tr id="p22i7">
+            <td>
+              <input type="radio" name="radProcessor"
+                 value="p22i7" id='p22i7ID'
+                 onclick="window.top.updateProcessor(3)" />
+            </td>
+            <td>
+              2.2GHz Dual-core Intel Core i7<br>Turbo Boost up to 3.4GHz
+            </td>
+          </tr>
+          <tr id="p25i7">
+            <td>
+              <input type="radio" name="radProcessor"
+                 value="p25i7" id='p25i7ID'
+                 onclick="window.top.updateProcessor(4)" />
+            </td>
+            <td>
+              2.5GHz Dual-core Intel Core i7<br>Turbo Boost up to 3.7GHz
+            </td>
+          </tr>
+          <tr id='p28i7'>
+            <td>
+              <input type="radio" name="radProcessor"
+                value="p28i7" id='p28i7ID'
+                 onclick="window.top.updateProcessor(5)" />
+            </td>
+            <td>
+              2.8GHz Dual-core Intel Core i7<br>Turbo Boost up to 4.0GHz
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="hardDrive">
+        <p>
+        <h4>Upgrade Hard Drive:</h4>
+        <table>
+          <tr id='128GBssd'>
+            <td>
+              <input type="radio" name="radHardDrive"
+                value="128GBssd" id="128GBssdID"
+                 onclick="window.top.updateHardDrive(0)" />
+            </td>
+            <td>
+              128GB Solid State Drive
+            </td>
+          </tr>
+          <tr id='256GBssd'>
+            <td>
+              <input type="radio" name="radHardDrive"
+                value="256GBssd" id="256GBssdID"
+                 onclick="window.top.updateHardDrive(1)" />
+            </td>
+            <td>
+              256GB Solid State Drive
+            </td>
+          </tr>
+          <tr id='512GBssd'>
+            <td>
+              <input type="radio" name="radHardDrive"
+                value="512GBssd" id="512GBssdID"
+                 onclick="window.top.updateHardDrive(2)" />
+            </td>
+            <td>
+              512GB Solid State Drive
+            </td>
+          </tr>
+          <tr id='1TBssd'>
+            <td>
+              <input type="radio" name="radHardDrive"
+                value="1TBssd" id="1TBssdID"
+                 onclick="window.top.updateHardDrive(3)" />
+            </td>
+            <td>
+              1TB Solid State Drive
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="ram">
+        <p>
+        <h4>Upgrade RAM:</h4>
+        <table>
+          <tr id='8GB1866'>
+            <td>
+              <input type="radio" name="radRam"
+                value="8GB1866" id="8GB1866ID"
+                 onclick="window.top.updateRam(0)" />
+            </td>
+            <td>
+              8GB 1866MHz LPDDR3 SDRAM
+            </td>
+          </tr>
+          <tr id='16GB1866'>
+            <td>
+              <input type="radio" name="radRam"
+                value="16GB1866" id="16GB1866ID"
+                 onclick="window.top.updateRam(1)" />
+            </td>
+            <td>
+              16GB 1866MHz LPDDR3 SDRAM
+            </td>
+          </tr>
+          <tr id='16GB1600'>
+            <td>
+              <input type="radio" name="radRam"
+                value="16GB1600" id="16GB1600ID"
+                 onclick="window.top.updateRam(2)" />
+            </td>
+            <td>
+              16GB 1600MHz DDR3 SDRAM
+            </td>
+          </tr>
+        </table>
+      </div>
+    </form>
+
+    <script language="JavaScript" type="text/javascript">
+      $(document).ready(function(){
+        window.top.hideProcessors();
+        window.top.hideHDs();
+        window.top.hideRam();
+      });
+    </script>
+  </body>
+
+</html>

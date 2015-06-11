@@ -1,0 +1,78 @@
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+#header {
+  text-align: center;
+}
+
+#totalPrice {
+  position: absolute;
+  top: 29%;
+  right: 25%;
+  left: 25%;
+  bottom: 29%;
+  border-radius: 20px;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  line-height: 33px;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+#baseModel {
+  position: fixed;
+  text-align: center;
+  vertical-align: middle;
+  width: 90%;
+  left: 5%;
+  font-size: 14px;
+}
+
+#description {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  width: 90%;
+  height: 90%;
+  background-color: white;
+  text-align: center;
+  line-height: 15px;
+  font-size: 14px;
+}
+
+#processor {
+  position: fixed;
+  top: 200px;
+  left: 5%;
+  width: 30%;
+  text-align: center;
+  font-size: 14px;
+}
+
+#hardDrive{
+  position: fixed;
+  top: 200px;
+  left: 40%;
+  width: 25%;
+  text-align: center;
+  font-size: 14px;
+}
+
+#ram {
+  position: fixed;
+  top: 200px;
+  left: 70%;
+  width: 25%;
+  text-align: center;
+  font-size: 14px;
+}
+
+tr {
+  text-align: left;
+}
